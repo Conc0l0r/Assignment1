@@ -72,3 +72,16 @@ footer{
     margin-top: 10px;
 
 }
+.links-text{
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.links-text a{
+    display: inline-block;
+    color: pink;
+    background:#333;
+    text-decoration: none;
+    padding: 15px;
+}
