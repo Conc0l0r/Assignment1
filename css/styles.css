@@ -1,8 +1,8 @@
 
 body{
     padding: 0%;
-    background-color:#e6deff;
     margin: 0%;
+
 }
 
 .navbar {
@@ -70,6 +70,9 @@ footer{
     padding: 10px;
     text-align: center;
     margin-top: 10px;
+    width: 100%;
+    bottom: 0%;
+    position: fixed;
 
 }
 .links-text{
@@ -78,10 +81,20 @@ footer{
 
 }
 
-.links-text a{
+.links-box{
     display: inline-block;
     color: pink;
     background:#333;
     text-decoration: none;
     padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+
+}
+
+.links-box:hover{
+    background: pink;
+    color: #333;
 }
