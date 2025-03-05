@@ -79,8 +79,8 @@ body {
  padding: 10px;
 }
 footer{
-    background-color: #333;
-    color: pink;
+    background: linear-gradient(to bottom, #c19e67 4%,#e9d4b3 13%,#c19e67 59%,#e9d4b3 94%);
+    color: black;
     padding: 10px;
     text-align: center;
     margin-top: 10px;
@@ -117,3 +117,53 @@ marquee{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
+ 
+#courses {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 20px; 
+    padding: 10px;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    position: relative; 
+    font-family: Georgia;
+    width: 200;
+}
+
+#aside-courses {
+    width: inherit ;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 20px; 
+    flex-shrink: 0;
+
+    position: relative;
+}
+
+#aside-courses h3 {
+    width: inherit ;
+    position: absolute;
+    top: -5px; 
+    left: 250px; 
+    font-size: 25px;
+    font-weight: bold;
+    white-space: nowrap; 
+}
+
+#aside-courses img {
+    width: inherit;
+    height: inherit; 
+    object-fit: cover;
+    border-radius: 70%; 
+}
+
+.padding-left{
+    padding-left: 20px;
+}
+
+
+
