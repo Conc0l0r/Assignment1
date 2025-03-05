@@ -1,24 +1,32 @@
-
-body{
-    padding: 0%;
-    margin: 0%;
-
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(45deg, #f2eee1 0%,#e5cdb3 44%,#e5cdb3 44%,#e5cdb3 61%,#e5cdb3 77%,#e2c09c 98%);
+    
 }
 
+@media(min-width: 992px){
 .navbar {
     display: flex;
-    background-color: #333;
+    background: linear-gradient(to bottom, #c19e67 4%,#e9d4b3 13%,#c19e67 59%,#e9d4b3 94%);
+   
     padding: 15px;
     text-align: center;
+    align-self: self-end;
+   
     
    
-}
+}}
+
+/* 
 
 /* navbar with a href*/
 .navbar a{
-     color: pink;
+     color: rgba(0, 0, 0, 0.847);
      padding: 13px 16px;
      text-decoration: none; /*to remove the line */
+     
+     
 }
 
 /*nav bar with hover*/
@@ -34,9 +42,11 @@ body{
 
 }
 
+#imgshadow{
+    box-shadow: #4d4c4c;
+}
 
-
-.intro {
+#intro {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,23 +56,24 @@ body{
     font-size: 20px;
 }
 
-.text{
+#text{
     flex:1;
 }
 
-.aside{
+#aside{
  flex-shrink: 0;
  display: flex;
+ 
 }
 
-.aside img{
+#aside img{
     height: 240px;
     display: flex;
     bottom: 20%;
  
 }
 
-.cck p{
+#cck p{
  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  font-size: 22px;
  padding: 10px;
@@ -75,16 +86,16 @@ footer{
     margin-top: 10px;
     width: 100%;
     bottom: 0%;
-    position: fixed;
+    position: relative;
 
 }
-.links-text{
+#links-text{
     text-align: center;
     margin-top: 50px;
 
 }
 
-.links-box{
+#links-box{
     display: inline-block;
     color: pink;
     background:#333;
@@ -97,10 +108,10 @@ footer{
 
 }
 
-.links-box:hover{
+#links-box:hover{
     background: pink;
     color: #333;
-}
+} */
 
 marquee{
     font-size: 20px;
