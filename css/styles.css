@@ -1,3 +1,6 @@
+@import url(bootstrap.min.css);
+@import url(line-awesome.min.css);
+@import url(aos.css);
 body {
     padding: 0;
     margin: 0;
