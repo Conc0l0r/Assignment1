@@ -1,9 +1,5 @@
 @import url(bootstrap.min.css);
-@import url(line-awesome.min.css);
-@import url(aos.css);
-body {
-    
-    
+body {  
     
 }
 
@@ -19,7 +15,7 @@ body {
     --color-base2:   #efebe7;      /*body bg*/
     --color-brand: #bc8997;      
     --color-brand2: #F39C12;     
-    --sidebar-width: 500px;
+    --sidebar-width: 450px;
 }
 
 
@@ -28,13 +24,6 @@ body {
     font-weight: 400;
   font-style: normal;
   font-size: 22px;
-}
-.center{
-    text-align: center;
-}
-
-.padding{
-    padding-top: 20px;
 }
 
 body{
@@ -49,6 +38,21 @@ body{
 h1,h2,h3,h4,h5,h6{
     color: var(--color-heading);
 
+}
+
+/* General CSS */
+
+.center{
+    text-align: center;
+    align-items: center;
+}
+
+.padding{
+    padding-top: 20px;
+}
+
+.padding-left{
+    padding-left: 30px;
 }
 
 a{
@@ -68,6 +72,11 @@ img{
     width: 100%;
 }
 
+.gitlinks{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 #pic{
     border: 4px solid #272626;
     border-radius: 10px;
@@ -78,18 +87,18 @@ img{
 .navbar{
     background-color: var(--color-base);
 }
-@media (min-width : 992px) {
-    .navbar{
-        min-height :100vh;
-        width: var(--sidebar-width);
-        background:linear-gradient(#272626, #333); /*nav bg*/
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;     
+        width: var(--sidebar-width); /* Ensure var(--sidebar-width) is defined */
+        background: linear-gradient(#272626, #333); /* Navigation background */
         font-size: 30px;
-       
         box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
-       
     }
-    
 }
+
+    
+
 .navbar .nav-link{
 color: whitesmoke;
 }
@@ -130,10 +139,103 @@ color: whitesmoke;
     color: #000000;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
 }
-marquee{
-    color: #614235; 
+
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Smooth shadow */
+    border-radius: 15px;  /* Rounded corners */
+  }
+  
+  .card {
+    border: none;  /* Removes default border if any */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Adds deeper shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 6px 16px #000000; /* Darker shadow on hover */
+  }
+  
+
+  /* Search Bar */
+  .search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    position: absolute;
+    left: 50%;
 }
+.search-input {
+    border: none;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 25px;
+}
+.search-button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 15px;
+    font-size: 18px;
+}
+.search-button:hover {
+    background: #555;
+}
+
 /* Footer */
-footer{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
+
+.footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    padding-left: 10%;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .git-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .gitlinks {
+    margin-left: 5px;
+    color: #bc8997;;
+    text-decoration: none;
+  }
+  
+  .gitlinks:hover {
+    text-decoration: underline;
+    color: #F39C12;
+  }
+  
+  .footer-nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-nav .nav-link:hover {
+    color: #c5788d;
+  }
+  
+  .footer-nav .nav-link.active {
+
+    color: #F39C12;
+  }
+  

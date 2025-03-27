@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="content-wrapper">
+
+<!-- HEAD -->
 
 <head>
     <title>Nawaal Syed</title>
@@ -8,35 +10,39 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body id="content-wrapper">
-        <header>
-            <nav class="navbar bg-dark navbar-expand-lg navbar-dark fixed-top ">
-                <div class="container-flex-lg-column d-flex flex-column align-items-center">
-                    <a class="navbar-brand mx-lg-auto  d-flex  mb-lg-4 mb-lg-0">
-                        <img src="/images/logo1.jpg" alt="Nawaal Syed Portfolio Logo" class="d-none d-lg-block img-fluid rounded-circle">
-                        <h2 class="h3 fw-bold d-block d-lg-none ms-2">Purrfolio</h2>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="resume.html">RESUME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="courses.html">COURSES</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <main>
+<header>
+    <nav class="navbar bg-dark navbar-expand-lg navbar-dark fixed-top ">
+        <div class="container-flex-lg-column d-flex flex-column align-items-center">
+            <a class="navbar-brand mx-lg-auto  d-flex  mb-lg-4 mb-lg-0">
+                <img src="/images/logo1.jpg" alt="Nawaal Syed Portfolio Logo" class="d-none d-lg-block img-fluid rounded-circle">
+                <h2 class="h3 fw-bold d-block d-lg-none ms-2">Purrfolio</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">RESUME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">COURSES</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- BODY -->
+
+<body >
+       
+        
             <section id="home" class="full-height px-lg-5 ms-auto">
                 <div class="container">
                     <div class="flex-lg-column">
@@ -54,7 +60,7 @@
                                 </div>
 
                                 <div class="col-md-12">
-                                    <img id="pic" src="images/picture.jpg" alt="A picture of Nawaal Syed" class="img-fluid">
+                                    <img id="pic" src="images/picture.jpg" alt="Photo of Nawaal Syed" class="img-fluid">
                                 </div>
 
                             </section>
@@ -75,17 +81,37 @@
 
             <br>
 
+<!-- CCK BUTTONS -->
+
             <div class="button-container">
                 <a href="https://www.ac-kuwait.edu.kw" class="custom-button" target="_blank">CCK Main Page</a>
                 <a href="https://www.ac-kuwait.edu.kw/home/admissions" class="custom-button" target="_blank">CCK Admissions</a>
                 <a href="https://www.ac-kuwait.edu.kw/program/computer-programming" class="custom-button" target="_blank">Computer Programming Course</a>
             </div>
-        </main>
         <hr>
-        <footer>
-            <p class="center">Assignment 1 - Made by Nawaal Syed &copy; </p>
-        </footer>
-    
+    <script src="js/main.js"></script>
 </body>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+    <div class="footer-content">
+      <div class="git-profile">
+        <h3 style="display: inline;">Git Profile: </h3> 
+        <a href="https://github.com/Conc0l0r" target="_blank" class="gitlinks">Conc0l0r</a>
+      </div>
+  
+      <!-- Navigation links aligned to the right -->
+      <div class="footer-nav">
+        <a class="nav-link active nav-item" id="navfoot" aria-current="page" href="index.html">HOME</a>
+        <a class="nav-link nav-item" id="navfoot" aria-current="page" href="resume.html">RESUME</a>
+        <a class="nav-link nav-item" id="navfoot" aria-current="page" href="courses.html">COURSES</a>
+      </div>
+    </div>
+    <p class="center">Assignment 1 - Made by Nawaal Syed &copy; </p>
+  </footer>
+  
+  
 
 </html>
