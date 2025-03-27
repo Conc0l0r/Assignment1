@@ -2690,7 +2690,7 @@ textarea.form-control-lg {
     padding-top: .25rem;
     padding-bottom: .25rem;
     padding-left: .5rem;
-    font-size: .875rem;
+    /* font-size: .875rem; */
     border-radius: var(--bs-border-radius-sm)
 }
 
@@ -9380,7 +9380,9 @@ fieldset:disabled .btn {
 }
 
 .fw-bold {
-    font-weight: 700 !important
+     /* font-weight: 900px; !important */
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .fw-bolder {

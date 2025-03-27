@@ -2,11 +2,138 @@
 @import url(line-awesome.min.css);
 @import url(aos.css);
 body {
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(45deg, #f2eee1 0%,#e5cdb3 44%,#e5cdb3 44%,#e5cdb3 61%,#e5cdb3 77%,#e2c09c 98%);
+    
+    
     
 }
 
 
+@import url(bootstrap.min.css);
+@import url(line-awesome.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+@import url(aos.css);
+:root {
+    --color-body: #000000;       
+    --color-heading: #2C3E50;    
+    --color-base: #192A56;       
+    --color-base2:   #efebe7;      /*body bg*/
+    --color-brand: #bc8997;      
+    --color-brand2: #F39C12;     
+    --sidebar-width: 500px;
+}
 
+
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+}
+.center{
+    text-align: center;
+}
+
+.padding{
+    padding-top: 20px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-base2);
+    color: var(--color-body);
+   
+    /* background: linear-gradient(45deg, #f2eee1 0%,#e5cdb3 44%,#e5cdb3 44%,#e5cdb3 61%,#e5cdb3 77%,#e2c09c 98%); */
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--color-heading);
+
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-body);
+  transition: all 0.4s ease;
+
+}
+
+a:hover{
+    color: var(--color-brand);
+}
+
+/* Image CSS*/
+
+img{
+    width: 100%;
+}
+
+#pic{
+    border: 4px solid #272626;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px rgba(1, 1, 1, 0.2);
+}
+
+/*Navbar CSS*/
+.navbar{
+    background-color: var(--color-base);
+}
+@media (min-width : 992px) {
+    .navbar{
+        min-height :100vh;
+        width: var(--sidebar-width);
+        background:linear-gradient(#272626, #333); /*nav bg*/
+        font-size: 30px;
+       
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+       
+    }
+    
+}
+.navbar .nav-link{
+color: whitesmoke;
+}
+
+.navbar .nav-link:hover{
+    color: var(--color-brand) ;
+}
+.navbar-nav .nav-link.active {
+    color: #af8313;
+}
+
+
+/*content wrapper*/
+#content-wrapper{
+    padding-left: var(--sidebar-width);
+}
+
+/* Button */
+.button-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.custom-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #272626; 
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.custom-button:hover {
+    background-color: #f0baa3; 
+    color: #000000;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+}
+marquee{
+    color: #614235; 
+}
+/* Footer */
+footer{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}

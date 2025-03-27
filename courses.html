@@ -8,28 +8,52 @@
   <link rel="stylesheet" href="css/styles.css"> 
 
 </head> 
-<body class="bgcolor">
-
-  <div class="navbar">
-    <img src="images/logo.png">
-    <a href="index.html">HOME</a>
-    <a href="courses.html">COURSES </a>
-    <a href="resume.html">RESUME</a>
-  </div>
+<body id="content-wrapper">
+  <header>
+      <nav class="navbar bg-dark navbar-expand-lg navbar-dark fixed-top ">
+          <div class="container-flex-lg-column d-flex flex-column align-items-center">
+              <a class="navbar-brand mx-lg-auto  d-flex  mb-lg-4 mb-lg-0">
+                  <img src="/images/logo1.jpg" alt="Nawaal Syed Portfolio Logo" class="d-none d-lg-block img-fluid rounded-circle">
+                  <h2 class="h3 fw-bold d-block d-lg-none ms-2">Purrfolio</h2>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+                      <li class="nav-item">
+                          <a class="nav-link " aria-current="page" href="index.html">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link " href="resume.html">RESUME</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link active" href="courses.html">COURSES</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
 
   <section>
     <center>
       <h1>This page displays the courses I have taken up until now</h1>
     </center>
-    <h2 class="padding-left"> Below are level 1 courses</h2>
+    <br>
+
+    <h2 class="form-select-sm "> Below are level 1 courses</h2>
     <hr>
+
+    <table>
     <!-- Computer Essentials -->
-    <div id="courses">
-      <aside id="aside-courses">
+   <tr>
+    <td>
         <h3>Computer Essentials</h3>
         
         <img src="images/computer_essentials.png" alt="computer_essentials">
-      </aside>
+      
 
       <p>
         An essential component of working with information technology includes maintaining a computer, using
@@ -40,14 +64,13 @@
         and the environment. Practical laboratory tests, such as installing guest operating systems on a host computer
         using virtualization software, serve to reinforce theory with application.
       </p>
-    </div>
-    <hr>
+    </td>
+    <td>
       <!-- Database -->
-    <div id="courses">
-      <aside id="aside-courses">
+   
         <h3>Database</h3>
         <img src="images/sql.png" alt="database">
-      </aside>
+    
 
       <p>
         Databases are an essential part of many information technology systems and are used to store data. Using Entity
@@ -57,9 +80,8 @@
         contrast to legacy systems and other information storage methods, students learn about the features and
         components of a database management system (DBMS).
       </p>
-    </div>
-
-    <hr>
+    </td>
+    </tr>
     <!-- Java -->
     <div id="courses">
       <aside id="aside-courses">
@@ -81,6 +103,7 @@
 
     <hr>
 <!-- Acheiving Success -->
+
     <div id="courses">
       <aside id="aside-courses">
         <h3>Achieving Success in Changing Environments
@@ -136,17 +159,9 @@
       </p>
       
     </div>
-   
-    
-
-
-
-
+  
   </section>
-
-
-
-
+</table>
   </body>
 
 </html>
