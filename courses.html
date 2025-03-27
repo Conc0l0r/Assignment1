@@ -5,36 +5,38 @@
   <title>Courses</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/styles.css"> 
+  <link rel="stylesheet" href="css/styles.css">
 
-</head> 
+</head>
+
 <body id="content-wrapper">
   <header>
-      <nav class="navbar bg-dark navbar-expand-lg navbar-dark fixed-top ">
-          <div class="container-flex-lg-column d-flex flex-column align-items-center">
-              <a class="navbar-brand mx-lg-auto  d-flex  mb-lg-4 mb-lg-0">
-                  <img src="/images/logo1.jpg" alt="Nawaal Syed Portfolio Logo" class="d-none d-lg-block img-fluid rounded-circle">
-                  <h2 class="h3 fw-bold d-block d-lg-none ms-2">Purrfolio</h2>
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
-                      <li class="nav-item">
-                          <a class="nav-link " aria-current="page" href="index.html">HOME</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link " href="resume.html">RESUME</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" href="courses.html">COURSES</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
+    <nav class="navbar bg-dark navbar-expand-lg navbar-dark fixed-top ">
+      <div class="container-flex-lg-column d-flex flex-column align-items-center">
+        <a class="navbar-brand mx-lg-auto  d-flex  mb-lg-4 mb-lg-0">
+          <img src="/images/logo1.jpg" alt="Nawaal Syed Portfolio Logo"
+            class="d-none d-lg-block img-fluid rounded-circle">
+          <h2 class="h3 fw-bold d-block d-lg-none ms-2">Purrfolio</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="resume.html">RESUME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="courses.html">COURSES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <section>
@@ -42,126 +44,149 @@
       <h1>This page displays the courses I have taken up until now</h1>
     </center>
     <br>
-
-    <h2 class="form-select-sm "> Below are level 1 courses</h2>
     <hr>
 
-    <table>
-    <!-- Computer Essentials -->
-   <tr>
-    <td>
-        <h3>Computer Essentials</h3>
-        
-        <img src="images/computer_essentials.png" alt="computer_essentials">
-      
 
-      <p>
-        An essential component of working with information technology includes maintaining a computer, using
-        productivity applications and operating systems, and voicing associated sustainability and environmental issues.
-        In order to maintain, use, and secure a computer, students describe computer hardware and utilize operating
-        system software. Students work on using spreadsheet software to solve issues, apply formulas, and create charts
-        to display data. Students talk about the sustainability of computer software and hardware in terms of both money
-        and the environment. Practical laboratory tests, such as installing guest operating systems on a host computer
-        using virtualization software, serve to reinforce theory with application.
-      </p>
-    </td>
-    <td>
-      <!-- Database -->
-   
-        <h3>Database</h3>
-        <img src="images/sql.png" alt="database">
-    
+    <!-- COMPUTER ESSENTIALS -->
 
-      <p>
-        Databases are an essential part of many information technology systems and are used to store data. Using Entity
-        Relation Diagrams (ERDs), students study the foundations of relational database design. They also learn how to
-        create, alter, and query databases using Structured Query Language (SQL). Using normalization, students design
-        and build databases that are secure, maintainable, and flexible enough to adjust with business needs. In
-        contrast to legacy systems and other information storage methods, students learn about the features and
-        components of a database management system (DBMS).
-      </p>
-    </td>
-    </tr>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card" style="width: 24rem;">
+            <img src="images/computeressentials.jpg" class="card-img-top" alt="Computer Essentials">
+            <div class="card-body">
+              <h5 class="card-title">Computer Essentials</h5>
+              <p class="card-text">
+                Students learn to maintain and secure computers, use operating systems, and apply productivity tools
+                like spreadsheets to solve problems and display data. They also explore the sustainability of IT
+                hardware and software and practice virtualization through lab tests.
+              </p>
+              <div class="d-flex justify-content-center">
+                <a href="https://www.ac-kuwait.edu.kw/program/computer-programming#desc_CST8101"
+                  class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- DATABASE -->
+
+        <div class="col-md-6 mb-4">
+          <div class="card" style="width: 24rem;">
+            <img src="images/database.jpg" class="card-img-top" alt="Database">
+            <div class="card-body">
+              <h5 class="card-title">Another Course</h5>
+              <p class="card-text">
+                Databases store essential IT system data. Students learn relational database design using ERDs, SQL
+                queries, and
+                normalization to create secure, maintainable, and flexible databases while exploring DBMS features
+                compared to
+                legacy systems.
+              </p>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
     <!-- Java -->
-    <div id="courses">
-      <aside id="aside-courses">
-        <h3>Computer Programming</h3>
-        <img src="images/java.png" alt="java">
-      </aside>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card" style="width: 24rem;">
+            <img src="images/java.jpg" class="card-img-top" alt="Computer Programming">
+            <div class="card-body">
+              <h5 class="card-title">Computer Programming</h5>
+              <p class="card-text">
+                Students gain a foundation in logic, problem-solving, and programming with Java, learning OOP concepts
+                (classes,
+                objects, abstraction, etc.), coding conventions, and control structures. Hands-on labs reinforce theory
+                with
+                practical applications.
+              </p>
+              <div class="d-flex justify-content-center">
+                <a href="https://www.ac-kuwait.edu.kw/program/computer-programming#desc_CST8101"
+                  class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <p>
-        A strong basis for future research in the topic is provided by having a basic understanding of logic,
-        problem-solving, and programming language structure. Using algorithms, pseudocode, flowcharts, UML Class
-        Diagrams, and testing, students gain an introduction to computer programming with a focus on problem analysis
-        and design. The Java programming language is utilized to implement problem solution designs. Students learn
-        about object-oriented programming, classes, objects, abstraction, encapsulation, inputs, outputs, coding
-        conventions, documentation, variables, constants, methods, constructors, one-dimensional arrays, sequential
-        structures, selection structures, repetition structures, and more through an introduction to the Java
-        programming language. Through hands-on laboratory evaluations, theory is strengthened with application.
-      </p>
+        <!-- Technical Mathematics -->
+
+        <div class="col-md-6 mb-4">
+          <div class="card" style="width: 24rem;">
+            <img src="images/maths.jpg" class="card-img-top" alt="Technical Mathematics">
+            <div class="card-body">
+              <h5 class="card-title">Technical Mathematics</h5>
+              <p class="card-text">
+                Students study algebraic and transcendental functions, solve equations and linear systems, and explore
+                Boolean
+                algebra, logic, and computer number systems. They also learn vector operations, covering essential math
+                modules
+                in a modular format.
+              </p>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <hr>
-<!-- Acheiving Success -->
+    <!-- Communications -->
 
-    <div id="courses">
-      <aside id="aside-courses">
-        <h3>Achieving Success in Changing Environments
-        </h3>
-        <img src="images/acsu.jpg" alt="database">
-      </aside>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card" style="width: 24rem;">
+            <img src="images/communication.jpg" class="card-img-top" alt="Communications">
+            <div class="card-body">
+              <h5 class="card-title">Communications</h5>
+              <p class="card-text">
+                Students develop effective communication skills through a career-focused approach, practicing writing,
+                speaking,
+                reading, listening, and using technology to communicate professionally in academic and professional
+                settings.
+              </p>
+              <div class="d-flex justify-content-center">
+                <a href="https://www.ac-kuwait.edu.kw/program/computer-programming#desc_CST8101"
+                  class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <p>
-        Rapid technological advancements have led to personal and professional decisions that make it difficult for
-        everyone of us to determine how we might contribute to the new society. The 21st century offers many benefits,
-        but it also brings with it possible risks and moral dilemmas that need for appropriate answers. In order to help
-        resolve some of the significant difficulties in our complex society with its conflicting interests, students
-        investigate the possibilities that lie ahead, evaluate their own abilities and capabilities, and use critical
-        thinking and decision-making methods.
-      </p>
+        <!-- Acheiving Success -->
+
+        <div class="col-md-6 mb-4">
+          <div class="card" style="width: 24rem;">
+            <img src="images/acice.jpg" class="card-img-top" alt="Achieving Success in Changing Environments">
+            <div class="card-body">
+              <h5 class="card-title">Achieving Success in Changing Environments</h5>
+              <p class="card-text">
+                Students explore future possibilities, assess their skills, and apply critical thinking to address the
+                ethical
+                dilemmas and challenges posed by rapid technological advancements in 21st-century society.
+              </p>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
 
-    <hr>
-<!-- Communications -->
-    <div id="courses">
-      <aside id="aside-courses">
-        <h3>Communications</h3>
-        <img src="images/comms.jpg" alt="database">
-      </aside>
-
-      <p>
-        Regardless of subject or sector of study, businesses continue to look for effective communication skills.
-        Students concentrate on fulfilling the requirements of successful communication through a hands-on,
-        career-focused approach. Students practice writing, speaking, reading, listening, finding and documenting
-        information, and using technology to communicate professionally through a mix of lectures, activities, and
-        independent study. Students gain and hone communication skills that help them succeed in both academic and
-        professional settings.
-      </p>
-    </div>
-
-
-<hr>
-<!-- Technical Mathematics -->
-    <div id="courses"> 
-      <aside id="aside-courses">
-        <h3>Technical Mathematics</h3>  
-        
-        <img src="images/math.jpg" alt="database">
-      </aside>
-      <p>
-        Calculus requires a thorough understanding of algebraic and transcendental functions. In addition to learning
-        the properties of and graphing algebraic and transcendental functions, students also manipulate algebraic
-        expressions and solve algebraic equations and linear systems. In order to answer problems concerning computer
-        systems, students study computer number systems in addition to Boolean algebra and logic. Using vector
-        components, students also learn how to add and subtract vectors. This course, which is offered in a modular
-        fashion, is equivalent to finishing all of the math modules A, B, C, D, E, F, and L.
-      </p>
-      
-    </div>
-  
-  </section>
-</table>
-  </body>
+</body>
 
 </html>
