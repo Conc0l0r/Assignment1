@@ -1,10 +1,5 @@
 @import url(bootstrap.min.css);
-body {  
-    
-}
 
-
-@import url(bootstrap.min.css);
 @import url(line-awesome.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
 @import url(aos.css);
@@ -31,8 +26,6 @@ body{
     margin: 0;
     background-color: var(--color-base2);
     color: var(--color-body);
-   
-    /* background: linear-gradient(45deg, #f2eee1 0%,#e5cdb3 44%,#e5cdb3 44%,#e5cdb3 61%,#e5cdb3 77%,#e2c09c 98%); */
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -104,23 +97,53 @@ img{
   transition: padding-left 0.3s ease;
 }
 
-#hamburger-menu {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  font-size: 24px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  z-index: 100;
-  display: block;
+@media (min-width: 992px) {
+  .body {
+    min-height: 100vh;
+    width: var(--sidebar-width);
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  #hamburger-menu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    display: block;
+  }
+}
+
+@media (max-width: 991px) { 
+  h1.text-center, 
+  .d-flex.justify-content-center.mt-5,
+  section.container,
+  section.container .row,
+  section.container .row .col-md-6,
+  section.container .row .col-md-6 .card,
+  section.container .row .col-md-6 .card img,
+  section.container .row .col-md-6 .card .card-body {
+    display: none;
+  }
+
+  #content-wrapper {
+    padding-top: 20px;
+  }
+
+
+  nav.navbar {
+    position: static; 
+  }
 }
 
 @media (min-width: 992px) {
   .navbar {
     min-height: 100vh;
     width: var(--sidebar-width);
-    background: linear-gradient(#192A56, #333);
+    background: linear-gradient(#71515a, #333);
     font-size: 30px;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
   }
@@ -137,8 +160,6 @@ img{
 .navbar.active {
   width: 100%;
 }
-
-
 
 /* Button */
 .button-container {
@@ -166,21 +187,21 @@ img{
 
 
 .shadow {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Smooth shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     border-radius: 15px;  /* Rounded corners */
   }
 
   
   
   .card {
-    border: none;  /* Removes default border if any */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Adds deeper shadow */
+    border: none; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .card:hover {
-    transform: translateY(-10px); /* Slight lift on hover */
-    box-shadow: 0 6px 16px #000000; /* Darker shadow on hover */
+    transform: translateY(-10px); 
+    box-shadow: 0 6px 16px #000000; 
   }
 
   .card-body {
@@ -195,12 +216,7 @@ img{
     padding: 20px;
 }
 
-.search-container {
-    width: 80%;
-    max-width: 600px;
-    margin: 20px auto;
-}
-  
+
 
   /* Search Bar */
   .search-container {
@@ -209,20 +225,22 @@ img{
     background: white;
     padding: 15px;
     border-radius: 40px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 600px;
-    position: absolute;
-    left: 50%;
-}
-.search-input {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 5);
+    width: 80%; 
+    max-width: 600px; 
+    margin: 20px auto; 
+  }
+  
+  .search-input {
     border: none;
     outline: none;
     padding: 15px;
     width: 100%;
     font-size: 18px;
     border-radius: 25px;
-}
-.search-button {
+  }
+  
+  .search-button {
     background: #333;
     color: white;
     border: none;
@@ -231,10 +249,11 @@ img{
     cursor: pointer;
     margin-left: 15px;
     font-size: 18px;
-}
-.search-button:hover {
-    background: #555;
-}
+  }
+  
+  .search-button:hover {
+    background: #71515a;
+  }
 
 /* Footer */
 
@@ -341,7 +360,7 @@ img{
     
   }
 
-  /* GIT IMAGE */
+  /* RESUME VIDS */
   table {
     width: 100%;
     border-collapse: collapse;
@@ -379,4 +398,23 @@ video {
     width: 500px;
     height: auto;
     border-radius: 5%;
+}
+@media (max-width: 768px) {
+  table, tr, td {
+    display: block;
+  }
+
+  .git-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .git-text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  video {
+    width: 100%;
+  }
 }
