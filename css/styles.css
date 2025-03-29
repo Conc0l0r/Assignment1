@@ -9,13 +9,13 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
 @import url(aos.css);
 :root {
-    --color-body: #000000;       
-    --color-heading: #2C3E50;    
-    --color-base: #192A56;       
-    --color-base2:   #efebe7;      /*body bg*/
-    --color-brand: #bc8997;      
-    --color-brand2: #F39C12;     
-    --sidebar-width: 450px;
+  --color-body: #000000;
+  --color-heading: #2C3E50;
+  --color-base: #192A56;
+  --color-base2: #efebe7;
+  --color-brand: #bc8997;
+  --color-brand2: #F39C12;
+  --sidebar-width: 450px;
 }
 
 
@@ -87,37 +87,58 @@ img{
 }
 
 /*Navbar CSS*/
-.navbar{
-    background-color: var(--color-base);
-}
-@media (min-width: 992px) {
-    .navbar {
-        min-height: 100vh;     
-        width: var(--sidebar-width); /* Ensure var(--sidebar-width) is defined */
-        background: linear-gradient(#272626, #333); /* Navigation background */
-        font-size: 30px;
-        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
-    }
+.navbar .nav-link {
+  color: whitesmoke;
 }
 
-    
-
-.navbar .nav-link{
-color: whitesmoke;
+.navbar .nav-link:hover {
+  color: var(--color-brand);
 }
 
-.navbar .nav-link:hover{
-    color: var(--color-brand) ;
-}
 .navbar-nav .nav-link.active {
-    color: #af8313;
+  color: var(--color-brand);
 }
 
+#content-wrapper {
+  padding-left: 0;
+  transition: padding-left 0.3s ease;
+}
 
-/*content wrapper*/
-#content-wrapper{
+#hamburger-menu {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    min-height: 100vh;
+    width: var(--sidebar-width);
+    background: linear-gradient(#192A56, #333);
+    font-size: 30px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  #content-wrapper {
     padding-left: var(--sidebar-width);
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
 }
+
+.navbar.active {
+  width: 100%;
+}
+
+
 
 /* Button */
 .button-container {
@@ -359,10 +380,3 @@ video {
     height: auto;
     border-radius: 5%;
 }
-
-
-
-
-
-
-
