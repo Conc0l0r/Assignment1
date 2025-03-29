@@ -92,7 +92,7 @@ img{
 }
 
 .navbar .nav-link:hover {
-  color: var(--color-brand);
+  color: var(--color-brand2);
 }
 
 .navbar-nav .nav-link.active {
