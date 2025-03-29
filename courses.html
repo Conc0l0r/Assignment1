@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="content-wrapper">
+<html lang="en">
 
 <!-- HEAD -->
 
@@ -9,59 +9,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<!-- NAVIGATION BAR -->
-<header>
-  <nav class="navbar bg-dark navbar-expand-lg navbar-dark fixed-top">
-    <div class="container-flex-lg-column d-flex flex-column align-items-center">
-      <a class="navbar-brand mx-lg-auto d-flex mb-lg-4 mb-lg-0">
-        <img src="/images/logo1.jpg" alt="Nawaal Syed Portfolio Logo"
-          class="d-none d-lg-block img-fluid rounded-circle">
-        <h2 class="h3 fw-bold d-block d-lg-none ms-2">Purrfolio</h2>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="resume.html">RESUME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="courses.html">COURSES</a>
-          </li>
-        </ul>
+
+<!-- BODY -->
+
+<body id="content-wrapper">
+
+  <!-- NAVIGATION BAR -->
+
+  <header>
+    <nav class="navbar bg-dark navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid d-flex flex-column align-items-center">
+        <a class="navbar-brand mx-lg-auto d-flex mb-lg-4 mb-lg-0">
+          <img src="/images/logo1.jpg" alt="Nawaal Syed Portfolio Logo"
+            class="d-none d-lg-block img-fluid rounded-circle">
+          <h2 class="h3 fw-bold d-block d-lg-none ms-2">Purrfolio</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="courses.html">COURSES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.html">RESUME</a>
+            </li>
+
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
 
-<body>
+  <h1 class="text-center">This page displays the courses I have taken up until now</h1>
 
-  <h1 class="center">This page displays the courses I have taken up until now</h1>
+  <!-- SEARCH -->
 
-  <!-- Search Section -->
-  <section>
-    <div class=" center search-container">
+  <div class="d-flex justify-content-center mt-5">
+    <div class="search-container">
       <input type="text" class="search-input" id="searchInput" placeholder="Search for a Course...">
-      <button class="search-button">Search</button> <br>
+      <button class="search-button">Search</button>
     </div>
-  </section>
+  </div>
 
-  <!-- Courses Section-->
+  <!-- COURSES -->
 
   <section><br>
-    <div class="container"> <br> <br><br>
+    <div class=" container"> <br> <br><br>
       <div class="row">
+
         <!-- Computer Essentials -->
-        <div class=" col-md-6 mb-4">
+
+        <div class=" padding-left col-md-6 mb-4">
           <div class="card">
             <img src="images/computeressentials.jpg" class="card-img-top" alt="Computer Essentials">
             <div class="card-body">
-              <h5 class="card-title center">Computer Essentials</h5>
+              <h5 class="card-title text-center">Computer Essentials</h5>
               <p class="card-text">Students learn to maintain and secure computers, use operating systems, and apply
                 productivity tools like spreadsheets to solve problems and display data. They also explore
                 sustainability of IT hardware and software and practice virtualization through lab tests.</p>
@@ -75,11 +83,11 @@
 
         <!-- Database -->
 
-        <div class="col-md-6 mb-4">
+        <div class=" padding-right col-md-6 mb-4">
           <div class="card">
             <img src="images/database.jpg" class="card-img-top" alt="Database">
             <div class="card-body">
-              <h5 class="card-title center">Database</h5>
+              <h5 class="card-title text-center">Database</h5>
               <p class="card-text">Databases store essential IT system data. Students learn relational database design
                 using ERDs, SQL queries, and normalization to create secure, maintainable, and flexible databases while
                 exploring DBMS features compared to legacy systems.</p>
@@ -95,11 +103,11 @@
       <!-- Computer Programming -->
 
       <div class="row">
-        <div class=" col-md-6 mb-4">
+        <div class=" padding-left col-md-6 mb-4">
           <div class="card">
             <img src="images/java.jpg" class="card-img-top" alt="Computer Programming">
             <div class="card-body">
-              <h5 class="card-title center">Computer Programming</h5>
+              <h5 class="card-title text-center">Computer Programming</h5>
               <p class="card-text">Students gain a foundation in logic, problem-solving, and programming with Java,
                 learning OOP concepts (classes, objects, abstraction, etc.), coding conventions, and control structures.
                 Hands-on labs reinforce theory with practical applications.</p>
@@ -113,11 +121,11 @@
 
         <!-- Technical Mathematics -->
 
-        <div class="col-md-6 mb-4">
+        <div class=" padding-right col-md-6 mb-4">
           <div class="card">
             <img src="images/maths.jpg" class="card-img-top" alt="Technical Mathematics">
             <div class="card-body">
-              <h5 class="card-title center">Technical Mathematics</h5>
+              <h5 class="card-title text-center">Technical Mathematics</h5>
               <p class="card-text">Students study algebraic and transcendental functions, solve equations and linear
                 systems, and explore Boolean algebra, logic, and computer number systems. They also learn vector
                 operations, covering essential math modules in a modular format.</p>
@@ -133,11 +141,11 @@
       <!-- Communications -->
 
       <div class="row">
-        <div class=" col-md-6 mb-4">
+        <div class=" padding-left col-md-6 mb-4">
           <div class="card">
             <img src="images/communication.jpg" class="card-img-top" alt="Communications">
             <div class="card-body">
-              <h5 class="card-title center">Communications</h5>
+              <h5 class="card-title text-center">Communications</h5>
               <p class="card-text">Students develop effective communication skills through a career-focused approach,
                 practicing writing, speaking, reading, listening, and using technology to communicate professionally in
                 academic and professional settings.</p>
@@ -151,11 +159,11 @@
 
         <!-- Achieving Success -->
 
-        <div class=" col-md-6 mb-4">
+        <div class=" padding-right col-md-6 mb-4">
           <div class="card">
             <img src="images/acice.jpg" class="card-img-top" alt="Achieving Success in Changing Environments">
             <div class="card-body">
-              <h5 class="card-title center">Achieving Success in Changing Environments</h5>
+              <h5 class="card-title text-center">Achieving Success in Changing Environments</h5>
               <p class="card-text">Students explore future possibilities, assess their skills, and apply critical
                 thinking to address ethical dilemmas and challenges posed by rapid technological advancements in
                 21st-century society.</p>
@@ -171,12 +179,11 @@
       <!-- Linux -->
 
       <div class="row">
-
-        <div class=" col-md-6 mb-4">
+        <div class="  padding-left col-md-6 mb-4">
           <div class="card">
             <img src="images/linux.jpg" class="card-img-top" alt="Linux">
             <div class="card-body">
-              <h5 class="card-title center">Linux</h5>
+              <h5 class="card-title text-center">Linux</h5>
               <p class="card-text">Operating systems coordinate hardware and software interactions, forming the core of
                 IT systems. Students learn OS concepts like process and storage management, installation, and
                 administration, with practical GNU/Linux lab work to build command-line skills.</p>
@@ -190,17 +197,17 @@
 
         <!-- Web Programming -->
 
-        <div class=" col-md-6 mb-4">
+        <div class="  padding-right col-md-6 mb-4">
           <div class="card">
-            <img src="images/webprogram.jpg" class="card-img-top" alt="Web Programming">
+            <img src="images/webprogram.jpg" class="card-img-top " alt="Web Programming">
             <div class="card-body">
-              <h5 class="card-title center">Web Programming</h5>
+              <h5 class="card-title text-center">Web Programming</h5>
               <p class="card-text">Students learn web programming, design, and implementation using JavaScript, HTML5,
                 and PHP. They apply these skills through practical assignments to create and maintain interactive
-                websites.</p>
-              <div class="d-flex justify-content-center"><br>
-                <br> <a href="https://www.ac-kuwait.edu.kw/program/computer-programming#desc_CST8101"
-                  class="custom-button" target="_blank">Check More!</a>
+                websites.</p><BR><BR>
+              <div class="d-flex justify-content-center">
+                <a href="https://www.ac-kuwait.edu.kw/program/computer-programming#desc_CST8101" class="custom-button"
+                  target="_blank">Check More!</a>
               </div>
             </div>
           </div>
@@ -209,29 +216,25 @@
     </div>
   </section>
 
+  <hr>
 
+  <!-- FOOTER -->
 
-  <HR>
-
-  <script src="js/main.js"></script>
-</body>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-content">
+  <footer class="footer">
+    <div class="footer-content">
       <div class="git-profile">
-          <h3  class="line">Git Profile: </h3>
-          <a href="https://github.com/Conc0l0r" target="_blank" class="links">Conc0l0r</a>
+        <h3 class="line">Git Profile: </h3>
+        <a href="https://github.com/Conc0l0r" target="_blank" class="links">Conc0l0r</a>
       </div>
 
-      <!-- Navigation links aligned to the right -->
       <div class="footer-nav">
-          <a class="nav-link active nav-item" id="navfoot" aria-current="page" href="index.html">HOME</a>
-          <a class="nav-link nav-item" id="navfoot" aria-current="page" href="resume.html">RESUME</a>
-          <a class="nav-link nav-item" id="navfoot" aria-current="page" href="courses.html">COURSES</a>
+        <a class="nav-link active nav-item" href="index.html">HOME</a>
+        <a class="nav-link nav-item" href="courses.html">COURSES</a>
+        <a class="nav-link nav-item" href="resume.html">RESUME</a>
       </div>
-  </div>
-  <p class="center">Assignment 1 - Made by Nawaal Syed &copy; </p>
-</footer>
+    </div>
+    <p class="text-center">Assignment 1 - Made by Nawaal Syed &copy;</p>
+  </footer>
+</body>
 
 </html>

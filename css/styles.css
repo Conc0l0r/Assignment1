@@ -55,6 +55,10 @@ h1,h2,h3,h4,h5,h6{
     padding-left: 30px;
 }
 
+.padding-right{
+padding-right: 30px;
+}
+
 a{
   text-decoration: none;
   color: var(--color-body);
@@ -71,6 +75,8 @@ a:hover{
 img{
     width: 100%;
 }
+
+
 
 
 
@@ -142,6 +148,8 @@ color: whitesmoke;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Smooth shadow */
     border-radius: 15px;  /* Rounded corners */
   }
+
+  
   
   .card {
     border: none;  /* Removes default border if any */
@@ -153,6 +161,24 @@ color: whitesmoke;
     transform: translateY(-10px); /* Slight lift on hover */
     box-shadow: 0 6px 16px #000000; /* Darker shadow on hover */
   }
+
+  .card-body {
+    flex-grow: 1;
+}
+
+.card-img{
+  height: 200px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.search-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+}
   
 
   /* Search Bar */
@@ -291,4 +317,52 @@ color: whitesmoke;
   .ld{
     font-weight: bold;
     text-decoration: underline;
+    
   }
+
+  /* GIT IMAGE */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.git-section {
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px;
+}
+
+.git-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.git-text a {
+    font-size: 35px;
+}
+
+.git-section img {
+    width: 400px;
+    height: auto;
+    border-radius: 5%;
+}
+
+video {
+    width: 500px;
+    height: auto;
+    border-radius: 5%;
+}
+
+
+
+
+
+
+
