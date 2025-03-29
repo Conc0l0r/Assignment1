@@ -399,7 +399,7 @@ video {
     height: auto;
     border-radius: 5%;
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   table, tr, td {
     display: block;
   }
